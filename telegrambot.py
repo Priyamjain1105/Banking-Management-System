@@ -10,7 +10,7 @@ import random
 from typing import Final
 from telegram import Update
 from telegram.ext import Application,CommandHandler,MessageHandler,filters,ContextTypes,ConversationHandler, CallbackContext
-conn = pymysql.connect(host = 'localhost',user = 'root',password = 'arunrockstar',database = 'l')
+conn = pymysql.connect(host = 'localhost',user = 'root',password = '',database = '')
 
 c = conn.cursor()
 
@@ -76,8 +76,8 @@ Feel free to try out these commands! For example, you can check your account det
 """
 
 
-TOKEN: Final = '6425983499:AAH4mkRQqqwhyXyU93HsAh5_CsKR02fVVW4'
-bot_username:Final = 'PyBank_Pjbot'
+TOKEN: Final = 'TOKEN'
+bot_username:Final = 'USERNAME'
 
 async def start_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(s)
@@ -273,9 +273,9 @@ def fgm(l,t = 1):
         
        
     
-    sender = "priyam.automatedmails@gmail.com"
-    recipients = ["priyam.automatedmails@gmail.com",gm]
-    password = "ujewklzxlhtovdoq"
+    sender = "SENDER"
+    recipients = ["SENDER",gm]
+    password = "PASSWORD"
     send_email(subject, body, sender, recipients, password)
      
 
