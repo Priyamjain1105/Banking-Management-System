@@ -8,7 +8,7 @@ from datetime import date
 import time
 import random
 
-conn = pymysql.connect(host = 'localhost',user = 'root',password = 'arunrockstar',database = 'l')
+conn = pymysql.connect(host = 'localhost',user = 'root',password = '12345',database = 'data1')
 
 c = conn.cursor()
 #[account_no,name,money,password]
@@ -281,9 +281,9 @@ def fgm(l,t = 1):
         
        
     
-    sender = "priyam.automatedmails@gmail.com"
-    recipients = ["priyam.automatedmails@gmail.com",gm]
-    password = "ujewklzxlhtovdoq"
+    sender = ""
+    recipients = ["",gm]
+    password = ""
     send_email(subject, body, sender, recipients, password)
      
 
